@@ -152,4 +152,28 @@
   <section id="promotion">
     <h2>Limited Time Offer</h2>
     <p>Sign up for any course and get a 20% discount with the code <strong>PROMO20</strong>!</p>
-    <button class="cta-btn">Claim Discount
+    <button class="cta-btn">Claim Discount</button>
+  </section>
+
+  <footer>
+    <p>&copy; <?php echo date('Y'); ?> Course Academy | All rights reserved</p>
+  </footer>
+
+  <script>
+    // Enroll button functionality
+    const enrollButtons = document.querySelectorAll('.enroll-btn');
+    enrollButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        alert('You are now enrolled in this course!');
+      });
+    });
+
+    // CTA button for promotions
+    const ctaButton = document.querySelector('.cta-btn');
+    ctaButton.addEventListener('click', () => {
+      alert('Congrats! You have claimed the discount code: PROMO20');
+    });
+  </script>
+</body>
+
+</html>
